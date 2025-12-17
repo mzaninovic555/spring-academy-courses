@@ -1,5 +1,6 @@
 package rewards;
 
+import config.AspectsConfig;
 import javax.sql.DataSource;
 
 import org.springframework.context.annotation.Bean;
@@ -16,7 +17,7 @@ import config.RewardsConfig;
  * and you should see one line of LoggingAspect output in the console.	 
  */
 @Configuration
-@Import({RewardsConfig.class})
+@Import({RewardsConfig.class, AspectsConfig.class})
 public class SystemTestConfig {
 
 	
